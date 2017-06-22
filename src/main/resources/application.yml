@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bar?useSSL=false
+    username: root
+    password: root
+    driverClassName: org.gjt.mm.mysql.Driver
+  jpa:
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+
+foo:
+  datasource:
+    url: jdbc:mysql://localhost:3306/foo?useSSL=false
+    username: root
+    password: root
+    driverClassName: org.gjt.mm.mysql.Driver
+  jpa:
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+
+tar:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tar?useSSL=false
+    username: root
+    password: root
+    driverClassName: org.gjt.mm.mysql.Driver
+  jpa:
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+
+logging:
+  file: spring-boot-multiple-datasource.log
+  level:
+    org.springframework: 'INFO'
